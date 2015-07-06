@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample Integration</title>
+	<script src="player/js/hdwplayer.js"></script>
+</head>
+<body>
+
+<div id="player"></div>
+
+<script>
+hdwplayer({
+	id        : 'player',
+	swf       : 'player/player.swf',
+	width     : '705',
+	height    : '400',
+        type      : 'rtmp',
+        streamer  : 'rtmp://localhost/live/test',
+        video     : 'bunny.flv',
+        autoStart : 'true'
+});
+</script>
+
+</body>
+</html>
